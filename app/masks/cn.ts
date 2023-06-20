@@ -25,6 +25,34 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
   },
   {
+    "id": 2,
+    "avatar": "1f9ed",
+    "name": "取名器",
+    "context": [
+        {
+            "role": "user",
+            "content": "我需要你充当“python取名器”，我会提供python某段代码或参数或方法的功能，我需要你根据功能提供对应的合适的名称，最好简洁明了，不要有任何解释。一次最少提供5个参考，并以代码块的形式分开展示。我会用【】中间放入我用来取名的类型，值一般为“参数”“方法”，后面跟着的是对应的功能。\n我的第一个需求是：【方法】打印你好",
+            "date": ""
+        },
+        {
+            "role": "system",
+            "content": "```\nsay_hello\n```\n```\nprint_hello\n```\n```\ngreet\n```\n```\nhello_print\n```\n```\nspeak_hello\n```",
+            "date": ""
+        }
+    ],
+    "modelConfig": {
+        "model": "gpt-3.5-turbo",
+        "temperature": 1,
+        "max_tokens": 2000,
+        "presence_penalty": 0,
+        "sendMemory": true,
+        "historyMessageCount": 4,
+        "compressMessageLengthThreshold": 1000
+    },
+    "lang": "cn",
+    "builtin": false
+  },
+  {
     avatar: "1f978",
     name: "机器学习",
     context: [
