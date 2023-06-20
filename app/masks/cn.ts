@@ -25,7 +25,6 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
   },
   {
-    "id": 2,
     "avatar": "1f9ed",
     "name": "取名器",
     "context": [
@@ -50,7 +49,7 @@ export const CN_MASKS: BuiltinMask[] = [
         "compressMessageLengthThreshold": 1000
     },
     "lang": "cn",
-    "builtin": false
+    "builtin": true,
   },
   {
     avatar: "1f978",
